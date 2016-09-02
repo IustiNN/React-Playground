@@ -1,25 +1,19 @@
-import React, { Component } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import logo from '../../logo.svg';
+import React from 'react';
+import { Link } from 'react-router';
 import '../../App.css';
 
 
 export default class Layout extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			title: "Go away"
-		}
-	}
-	changeTitle(title) {
-		this.setState({title});
-	}
 	render() {
+		const { history } = this.props;
+		console.log(history.isActive("articles"));
 		return (
 			<div>
-				<Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
-				<Footer />
+				<h1>Semantic</h1>
+				{this.props.children}
+				<Link to="careers">Careers</Link>
+				<Link to="work">Work</Link>
+				<Link to="articles" activeClassName="activePage">Articles</Link>
 			</div>
 		)
 	}

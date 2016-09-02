@@ -1,12 +1,11 @@
 import React from 'react';
 
 
-export default class Work extends React.Component {
-	
+export default class Carrers extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>Work</h1>
+				<h1>Carrers</h1>
 			</div>
 		)
 	}
