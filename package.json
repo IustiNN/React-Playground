@@ -6,8 +6,10 @@
     "react-scripts": "0.3.0"
   },
   "dependencies": {
+    "history": "^3.2.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
+    "react-router": "^2.7.0",
     "semantic-ui": "^2.2.4"
   },
   "scripts": {
