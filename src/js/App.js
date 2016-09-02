@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactsList from './ContactsList';
+import CommentBox from './CommentBox';
 
 let contacts = [{
   phone: '123 213',
@@ -22,8 +22,8 @@ class App extends React.Component {
 	render() {
 		return (
         <div>
-          <h1>Contacts List</h1>
-          <ContactsList contacts={contacts}/>
+          <h1>React PlayGround</h1>
+          <CommentBox/>
         </div>
       )
 	}
